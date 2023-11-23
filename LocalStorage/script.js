@@ -24,6 +24,10 @@ class Controller {
     localStorage.setItem("data", JSON.stringify(this.data));
   }
 
+  Refresh() {
+    this.data = JSON.parse(localStorage.getItem("data"));
+  }
+
   Insert(task) {
     this.data = [...this.data, { id: this.data.length + 1, Task: task }];
     this.Set();
@@ -40,6 +44,8 @@ class Controller {
   }
 
   UpdateList() {
+    // Refresh Data
+    this.Refresh();
     // Reset / Clear All Elementt List
     list.innerHTML = "";
     for (let i = 0; i < this.data.length; i++) {
