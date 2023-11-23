@@ -1,0 +1,39 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-box { 
+    height: 80%;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    height: 40px;
+    display: flex;
+    margin: 15px 0;
+}
+
+.item input[type="text"] {
+    width: 80%;
+    padding: 5px;
+}
+
+.item button {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
